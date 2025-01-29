@@ -1,9 +1,14 @@
 import React, { useState } from 'react';
 import '../styles/BannerSection.css';
-import Parallaximage from '../Parallaximage';
+import Parallaximage from '../components/Parallaximage';
 
 export default function BannerSection() {
-  const [formData, setFormData] = useState({ name: '', email: '', phone: '', description: '' });
+  const [formData, setFormData] = useState({
+    name: '',
+    email: '',
+    phone: '',
+    description: '',
+  });
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -18,47 +23,47 @@ export default function BannerSection() {
   };
 
   return (
-    <section className="banner">
+    <section className='banner'>
       <div>
-        <Parallaximage src="/portraits/portrait4.JPG" alt="" />
+        <Parallaximage src='/portraits/portrait4.JPG' alt='' />
       </div>
-      <div className="banner-copy">
+      <div className='banner-copy'>
         <p>Be the</p>
         <h1>First to know</h1>
         <p>Make an order first time and get a discount for 20%</p>
-        <form className="banner-form" onSubmit={handleSubmit}>
+        <form className='banner-form' onSubmit={handleSubmit}>
           <input
-            type="text"
-            name="name"
-            placeholder="Your Name"
+            type='text'
+            name='name'
+            placeholder='Your Name'
             value={formData.name}
             onChange={handleChange}
             required
           />
           <input
-            type="email"
-            name="email"
-            placeholder="Your Email"
+            type='email'
+            name='email'
+            placeholder='Your Email'
             value={formData.email}
             onChange={handleChange}
             required
           />
           <input
-            type="tel"
-            name="phone"
-            placeholder="Your Phone Number"
+            type='tel'
+            name='phone'
+            placeholder='Your Phone Number'
             value={formData.phone}
             onChange={handleChange}
             required
           />
           <textarea
-            name="description"
+            name='description'
             placeholder="Describe what you'd like to do"
             value={formData.description}
             onChange={handleChange}
             required
           ></textarea>
-          <button type="submit">Submit</button>
+          <button type='submit'>Submit</button>
         </form>
       </div>
     </section>

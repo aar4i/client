@@ -1,11 +1,13 @@
 import React, { useEffect, useState } from 'react';
+import '../styles/ParallaxVideo.css';
 
 const ParallaxVideo = ({ videoSrc }) => {
-  const [offsetY, setOffsetY] = useState(0);
+  const [verticalOffset, setVerticalOffset] = useState(0);
 
   useEffect(() => {
     const handleScroll = () => {
-      setOffsetY(window.scrollY);
+      console.log('handling scroll...');
+      setVerticalOffset(window.scrollY);
     };
 
     window.addEventListener('scroll', handleScroll);
@@ -19,12 +21,7 @@ const ParallaxVideo = ({ videoSrc }) => {
     <video
       src={videoSrc}
       style={{
-        position: 'absolute',
-        top: `${offsetY * 0.5}px`,
-        left: '0',
-        width: '100%',
-
-        objectFit: 'cover',
+        top: `${verticalOffset * 0.5}px`,
       }}
       autoPlay
       muted

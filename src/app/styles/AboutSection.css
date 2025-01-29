@@ -1,0 +1,49 @@
+.about-brief {
+    position: absolute;
+    width: 0%;
+    top: 70%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+  }
+  
+  .about-brief p {
+    margin-bottom: 20px;
+    width: 700px;
+    text-align: center;
+    font-weight: 50;
+    margin-top: center;
+    margin-left: center;
+    font-family: "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif;";
+  }
+  
+  .about {
+    display: flex;
+    background-color: burlywood;
+  }
+  
+  .intro, .portrait {
+    position: relative;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1em;
+  }
+  
+  .intro p {
+    width: 50%;
+    text-align: center;
+  }
+  
+  .intro p:nth-child(1) {
+    text-decoration: underline;
+    margin-bottom: 0.5em;
+  }
+  
+  .portrait .portrait-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }

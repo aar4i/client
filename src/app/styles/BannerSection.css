@@ -1,0 +1,30 @@
+.banner-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    max-width: 400px;
+    margin: 1em auto;
+  }
+  
+  .banner-form input,
+  .banner-form textarea {
+    width: 100%;
+    padding: 0.8em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .banner-form button {
+    padding: 0.8em;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-transform: uppercase;
+  }
+  
+  .banner-form button:hover {
+    background-color: #0056b3;
+  }
+  

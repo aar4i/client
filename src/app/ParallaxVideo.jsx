@@ -3,40 +3,33 @@ import React, { useEffect, useState } from "react";
 const ParallaxVideo = ({ videoSrc, height = "500px" }) => {
   const [offsetY, setOffsetY] = useState(0);
 
-  const handleScroll = () => {
-    setOffsetY(window.scrollY);
-  };
-
   useEffect(() => {
+    const handleScroll = () => {
+      setOffsetY(window.scrollY);
+    };
+
     window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
   }, []);
 
   return (
-    <div
+    <video
+      src={videoSrc}
       style={{
-        position: "relative",
+        position: "absolute",
+        top: `${offsetY * 0.5}px`,
+        left: "0",
+        width: "100%",
         height: height,
-        overflow: "hidden",
-        perspective: "1px",
+        objectFit: "cover",
       }}
-    >
-      <video
-        src={videoSrc}
-        autoPlay
-        muted
-        loop
-        style={{
-          position: "absolute",
-          top: `${offsetY * 0.9}px`, // Adjust the multiplier for more/less parallax
-          left: "50%",
-          transform: "translate(-50%, 0)",
-          minWidth: "100%",
-          minHeight: "100%",
-          objectFit: "cover",
-        }}
-      />
-    </div>
+      autoPlay
+      muted
+      loop
+    />
   );
 };
 

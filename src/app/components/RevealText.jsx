@@ -2,6 +2,7 @@ import React, { useEffect, useRef } from 'react';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import SplitType from 'split-type';
+import '../styles/RevealText.css';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -23,7 +24,7 @@ const RevealText = ({ children, bgColor = '#000000', fgColor = '#ffffff' }) => {
           stagger: 0.02,
           scrollTrigger: {
             trigger: textRef.current,
-            start: 'top 70%',
+            start: 'top 85%',
             end: 'top 40%',
             scrub: true,
             markers: false, // Set to true for debugging
@@ -35,6 +36,7 @@ const RevealText = ({ children, bgColor = '#000000', fgColor = '#ffffff' }) => {
 
     // Cleanup
     return () => {
+      // wtf?
       ScrollTrigger.getAll().forEach((trigger) => trigger.kill());
     };
   }, [bgColor, fgColor]);

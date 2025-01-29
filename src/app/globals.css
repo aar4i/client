@@ -5,23 +5,22 @@
 }
 
 html,
-body{
+body {
   width: 100%;
   height: 100%;
-  background-color: rgb(188, 29, 29);
-  font-family: "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif;";
+  /* background-color: rgb(188, 29, 29); */
+  font-family: '-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif;';
 }
 
-img{
+img {
   position: absolute;
   width: 100%;
   height: 100%;
   object-fit: cover;
   will-change: transform;
-
 }
 
-.img{
+.img {
   position: absolute;
   top: 0;
   left: 0;
@@ -29,35 +28,35 @@ img{
   height: 100%;
   overflow: hidden;
 }
-  
-section{
+
+section {
   position: relative;
   width: 100vw;
   height: 100vh;
   overflow: hidden;
 }
 
-.banner{
+.banner {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.banner-copy{
+.banner-copy {
   position: relative;
   text-align: center;
 }
 
-.banner-copy h1{
+.banner-copy h1 {
   text-transform: uppercase;
 }
 
-.banner-copy p:nth-child(3){
+.banner-copy p:nth-child(3) {
   width: 100%;
   margin: 1em auto;
 }
 
-.shop{
+.shop {
   position: relative;
   width: 100%;
   height: 50%;

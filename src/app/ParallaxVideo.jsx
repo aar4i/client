@@ -1,6 +1,6 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState } from 'react';
 
-const ParallaxVideo = ({ videoSrc, height = "500px" }) => {
+const ParallaxVideo = ({ videoSrc }) => {
   const [offsetY, setOffsetY] = useState(0);
 
   useEffect(() => {
@@ -8,10 +8,10 @@ const ParallaxVideo = ({ videoSrc, height = "500px" }) => {
       setOffsetY(window.scrollY);
     };
 
-    window.addEventListener("scroll", handleScroll);
+    window.addEventListener('scroll', handleScroll);
 
     return () => {
-      window.removeEventListener("scroll", handleScroll);
+      window.removeEventListener('scroll', handleScroll);
     };
   }, []);
 
@@ -19,12 +19,12 @@ const ParallaxVideo = ({ videoSrc, height = "500px" }) => {
     <video
       src={videoSrc}
       style={{
-        position: "absolute",
+        position: 'absolute',
         top: `${offsetY * 0.5}px`,
-        left: "0",
-        width: "100%",
-        height: height,
-        objectFit: "cover",
+        left: '0',
+        width: '100%',
+
+        objectFit: 'cover',
       }}
       autoPlay
       muted

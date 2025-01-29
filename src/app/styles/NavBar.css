@@ -1,0 +1,39 @@
+.nav {
+  position: fixed;
+  display: flex;
+  width: 100%;
+  margin-top: 2rem;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  gap: 3rem;
+  z-index: 2;
+}
+
+.nav button {
+  text-transform: uppercase;
+  color: rgb(255, 255, 255);
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 1.2;
+  cursor: pointer;
+  text-decoration: none;
+  transition: color 0.3s ease, transform 0.2s ease;
+  background: none;
+  border: none;
+  padding: 0;
+  outline: none;
+}
+
+.nav button:hover,
+.nav button:focus {
+  color: rgb(150, 50, 200); /* Darker purple */
+  transform: scale(1.1);
+  text-shadow: 2px 2px 5px rgba(150, 50, 200, 0.5); /* Soft glow effect */
+}
+
+.nav button:focus {
+  outline: 2px solid white;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.8); /* White glow on focus */
+}

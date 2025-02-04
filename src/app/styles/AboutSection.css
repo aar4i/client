@@ -17,6 +17,8 @@
 .intro p {
   width: 50%;
   text-align: center;
+  color:black;
+  font-weight: bold;
 }
 
 .intro p:nth-child(1) {

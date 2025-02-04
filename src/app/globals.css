@@ -2,12 +2,13 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  
 }
 
 html,
 body {
   width: 100%;
-  height: 100%;
+  
   /* background-color: rgb(188, 29, 29); */
   font-size: 16px;
   line-height: 1.5;
@@ -43,20 +44,29 @@ section {
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 100%;
+  background-color: black;
 }
 
 .banner-copy {
   position: relative;
   text-align: center;
+  
 }
 
 .banner-copy h1 {
   text-transform: uppercase;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+    Ubuntu, Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  
 }
 
 .banner-copy p:nth-child(3) {
   width: 100%;
+  
   margin: 1em auto;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+    Ubuntu, Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
 }
 
 .shop {
@@ -106,7 +116,7 @@ h6 {
 p {
   font-size: 1rem;
   margin-bottom: 1em;
-  text-align: justify;
+  text-align: center;
   font-size: 1.25rem;
 }
 

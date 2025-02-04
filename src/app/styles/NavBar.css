@@ -1,5 +1,5 @@
 .nav {
-  position: fixed;
+  position:absolute;
   display: flex;
   width: 100%;
   margin-top: 2rem;
@@ -13,7 +13,7 @@
 
 .nav button {
   text-transform: uppercase;
-  color: rgb(255, 255, 255);
+  color: black(255, 255, 255);
   font-size: 1.5rem;
   font-weight: 700;
   line-height: 1.2;
@@ -28,7 +28,7 @@
 
 .nav button:hover,
 .nav button:focus {
-  color: rgb(150, 50, 200); /* Darker purple */
+  color: coral;
   transform: scale(1.1);
   text-shadow: 2px 2px 5px rgba(150, 50, 200, 0.5); /* Soft glow effect */
 }

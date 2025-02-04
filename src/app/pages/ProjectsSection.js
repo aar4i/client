@@ -24,17 +24,22 @@ export default function ProjectsSection() {
 
   return (
     <section className='projects'>
+        
       <div className={`projectsWrapper ${isVisible ? 'visible' : ''}`}>
-        <RevealText fgColor='#000000' bgColor='#ffffff'>
+        <RevealText fgColor='#ffffff' bgColor='#000000'>
           full-service clothing manufacturing for your business or brand
         </RevealText>
-        <RevealText fgColor='#000000' bgColor='#ffffff'>
+        <RevealText fgColor='#ffffff' bgColor='#000000'>
           custom garments from scratch or premade blanks
         </RevealText>
-        <RevealText fgColor='#000000' bgColor='#ffffff'>
+        <RevealText fgColor='#ffffff' bgColor='#000000'>
           low minimum order quantity
         </RevealText>
+      </div>
+      <div>
+        
       </div>
     </section>
   );
 }
+

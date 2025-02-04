@@ -24,13 +24,10 @@ export default function BannerSection() {
 
   return (
     <section className='banner'>
-      <div>
-        <Parallaximage src='/portraits/portrait4.JPG' alt='' />
-      </div>
+      
       <div className='banner-copy'>
-        <p>Be the</p>
-        <h1>First to know</h1>
-        <p>Make an order first time and get a discount for 20%</p>
+        
+        <h1>Make your order now</h1>
         <form className='banner-form' onSubmit={handleSubmit}>
           <input
             type='text'

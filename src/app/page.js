@@ -6,12 +6,14 @@ import ProjectsSection from './pages/ProjectsSection';
 import AboutSection from './pages/AboutSection';
 import BannerSection from './pages/BannerSection';
 import NavBar from './components/NavBar';
+import OffersSection from './pages/OffersSection';
 
 export default function Home() {
   return (
     <ReactLenis root>
       <NavBar />
       <HeroSection />
+      <OffersSection />
       <ProjectsSection />
       <AboutSection />
       <BannerSection />

@@ -1,11 +1,17 @@
+section{
+  background-color: black;
+}
+
+
 
 .banner-form {
+    padding-top: 10vh;
     display: flex;
     flex-direction: column;
     gap: 1em;
     max-width: 400px;
     margin: 1em auto;
-    
+    color: white;
   }
   
   .banner-form input,
@@ -24,6 +30,8 @@
     border-radius: 5px;
     cursor: pointer;
     text-transform: uppercase;
+    display: block; 
+    margin: 0 auto;
   }
   
   .banner-form button:hover {
@@ -34,8 +42,4 @@
     overflow: hidden;
   }
 
-  h1{
-    color: white;
-    text-transform: uppercase;
-    padding: 2rem;
-  }
+  

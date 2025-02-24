@@ -9,13 +9,6 @@
   background-color: black;
 }
 
-/* .projectsWrapper {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
-} */
 
 .projectsWrapper {
   position: absolute;
@@ -35,10 +28,9 @@
   transition: opacity 1.5s ease-out, transform 1.5s ease-out;
 }
 
-/* Parallax effect: Delay text arrival */
 .projectsWrapper.visible p {
   opacity: 1;
   transform: translateY(0);
-  transition-delay: 0.5s; /* Adjust for smoother parallax effect */
+  transition-delay: 0.5s; 
 }
 

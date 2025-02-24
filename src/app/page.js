@@ -7,6 +7,7 @@ import AboutSection from './pages/AboutSection';
 import BannerSection from './pages/BannerSection';
 import NavBar from './components/NavBar';
 import OffersSection from './pages/OffersSection';
+import Form from './pages/form'
 
 export default function Home() {
   return (
@@ -16,7 +17,7 @@ export default function Home() {
       <OffersSection />
       <ProjectsSection />
       <AboutSection />
-      <BannerSection />
+      <Form />
     </ReactLenis>
   );
 }
